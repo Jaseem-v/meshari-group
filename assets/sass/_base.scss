@@ -128,33 +128,7 @@ html {
     border: none;
   }
 
-  &__line {
-    color: #82b440;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-    position: relative;
-    padding-bottom: 3px;
 
-    &::before {
-      content: "";
-      background: #82b440;
-      height: 1px;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-
-    &:hover {
-      color: #1CBCD8;
-
-      &::before {
-        background: #1CBCD8;
-      }
-    }
-  }
 
   &:hover {
     color: #fff;
@@ -171,7 +145,7 @@ html {
 
   &--contact {
     margin: 3.5rem 0 0;
-    background: #CFA55B;
+    background: $color-secondary;
   }
 
 
@@ -520,4 +494,8 @@ html {
       border-bottom: 1px solid #82b440;
     }
   }
+}
+
+.row-coloumn{
+  flex-direction: column-reverse;
 }
