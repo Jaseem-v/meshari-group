@@ -1,0 +1,41 @@
+.typography {
+
+    &-1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4rem;
+        line-height: 123.5%;
+        margin-bottom: 2rem;
+
+        span {
+            color: $color-secondary;
+        }
+    }
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+
+    &__sub-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.7rem;
+        line-height: 120.5%;
+    }
+
+    &__bar {
+        height: 3px;
+        background-color: $color-secondary;
+        position: absolute;
+        bottom: 0rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+   
+    }
+}
