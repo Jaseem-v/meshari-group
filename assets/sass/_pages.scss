@@ -309,12 +309,10 @@ $black-color : #242423;
     display: block;
     height: 3px;
     width: 5rem;
-    margin: 1rem 0 1.5rem;
+    margin: 1rem 1px 3rem;
     position: relative;
     width: 1.5rem;
     height: 1rem;
-    margin-left: 1px;
-    margin-right: 1px;
     transform: skewX(-10deg);
     background-color: #2d3239;
 
@@ -370,6 +368,12 @@ $black-color : #242423;
         }
     }
 
+    &__text-part {
+        @media only screen and (max-width: $bp-xsmall) {
+            padding: 1rem;
+        }
+    }
+
     &__info {
         padding: 4rem 0 3rem;
 
@@ -399,12 +403,20 @@ $black-color : #242423;
         font-size: 1.6rem;
         word-spacing: 1px;
 
+        @media only screen and (max-width: $bp-xsmall) {
+            font-size: 1.9rem;
+        }
+
         i {
             position: absolute;
             color: $color-secondary;
             font-size: 1.5rem;
             top: 0;
             left: 0;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                font-size: 1.9rem;
+            }
         }
     }
 
@@ -412,6 +424,12 @@ $black-color : #242423;
         font-weight: 800;
         position: relative;
         margin-bottom: 1.5rem;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            font-size: 2.2rem;
+      
+
+        }
     }
 
     &__address {
@@ -494,8 +512,12 @@ $black-color : #242423;
 
         &-iframe {
             // border: 1px solid  var(--color-secondary);
-            width: 95%;
-            box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.2);
+            width: 85%;
+            box-shadow: -6px 6px 19px -7px rgba(0, 0, 0, 0.21);
+
+            @media only screen and (max-width: $bp-xsmall) {
+                width: 100%;
+            }
 
             iframe {
                 width: 100%;
