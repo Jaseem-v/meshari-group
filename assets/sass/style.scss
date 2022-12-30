@@ -140,7 +140,7 @@ main {
   padding: 10rem 0 35rem;
 
   &__bg-img {
-    width: 80%;
+    width: 50%;
     position: absolute;
     bottom: -7rem;
     z-index: 0;
@@ -153,9 +153,23 @@ main {
       width: 100%;
     }
 
+    &--pattern {
+      @media only screen and (max-width: $bp-small) {
+        width: 50%;
+      }
+
+      @media only screen and (max-width: $bp-xsmall) {
+        width: 100%;
+      }
+    }
+
     &--1 {
       right: 0;
       height: 45rem;
+
+      @media only screen and (max-width: $bp-xsmall) {
+        display: none;
+      }
     }
 
     &--2 {

@@ -4,6 +4,10 @@
 .breadcrumb {
     padding: 10rem 0 20rem;
 
+    @media only screen and (max-width: $bp-xsmall) {
+        padding: 5rem 0 25rem;
+    }
+
     &::before {
         display: none;
     }
@@ -15,13 +19,21 @@
             width: 30%;
             bottom: -15rem;
 
+            @media only screen and (max-width: $bp-xsmall) {
+                width: 50%;
+            }
+
         }
 
         &--2 {
             right: 0;
-            height: 45rem;
+            height: 40rem;
             width: 30%;
             bottom: -15rem;
+
+            @media only screen and (max-width: $bp-xsmall) {
+                width: 50%;
+            }
 
         }
 
@@ -148,7 +160,7 @@ $black-color : #242423;
 
     &__tabs {
         position: relative;
-        background-color: #fff;
+        background-color: #f8f8f8;
         display: flex;
         align-items: center;
         justify-content: space-between;
