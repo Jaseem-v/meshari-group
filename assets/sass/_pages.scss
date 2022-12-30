@@ -305,6 +305,32 @@ $black-color : #242423;
 
 /////////////////////////////
 /// contact
+.title-separator {
+    display: block;
+    height: 3px;
+    width: 5rem;
+    margin: 1rem 0 1.5rem;
+    position: relative;
+    width: 1.5rem;
+    height: 1rem;
+    margin-left: 1px;
+    margin-right: 1px;
+    transform: skewX(-10deg);
+    background-color: #2d3239;
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        background: #eee;
+        width: 20rem;
+        height: 4px;
+        left: 2rem;
+        transform: translateY(-50%) skewX(-10deg);
+        background-color: $color-secondary;
+    }
+}
 
 .contact {
     &-page {
@@ -385,10 +411,11 @@ $black-color : #242423;
     &__sub-head {
         font-weight: 800;
         position: relative;
+        margin-bottom: 1.5rem;
     }
 
     &__address {
-        max-width: 70.5rem;
+        max-width: 45rem;
     }
 
     &__right-part {
