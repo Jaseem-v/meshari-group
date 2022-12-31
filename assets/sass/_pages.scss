@@ -526,3 +526,15 @@ $black-color : #242423;
         }
     }
 }
+
+////////////////////////////
+/// mission
+
+.mission{
+    &__single-item{
+        padding: 4rem 2rem;
+        &:hover{
+            background: $color-secondary;
+        }
+    }
+}
